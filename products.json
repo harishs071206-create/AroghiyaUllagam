@@ -1,0 +1,56 @@
+[
+  {
+    "id": "P0001",
+    "name": "தேங்காய் எண்ணெய்",
+    "category": "Oils",
+    "price": 185.0,
+    "unit": "litre",
+    "stock": 30,
+    "image": "/static/images/coconut_oil.jpg"
+  },
+  {
+    "id": "P0002",
+    "name": "எள்ளு எண்ணெய்",
+    "category": "Oils",
+    "price": 220.0,
+    "unit": "litre",
+    "stock": 25,
+    "image": "/static/images/sesame_oil.jpg"
+  },
+  {
+    "id": "P0003",
+    "name": "கடலை எண்ணெய்",
+    "category": "Oils",
+    "price": 210.0,
+    "unit": "litre",
+    "stock": 20,
+    "image": "/static/images/groundnut_oil.avif"
+  },
+  {
+    "id": "P0004",
+    "name": "சூரியகாந்தி எண்ணெய்",
+    "category": "Oils",
+    "price": 190.0,
+    "unit": "litre",
+    "stock": 18,
+    "image": "/static/images/sunflower_oil.jfif"
+  },
+  {
+    "id": "P0005",
+    "name": "கடுகு எண்ணெய்",
+    "category": "Oils",
+    "price": 200.0,
+    "unit": "litre",
+    "stock": 15,
+    "image": "/static/images/mustard_oil.webp"
+  },
+  {
+    "id": "P0006",
+    "name": "நிலச்சீறு எண்ணெய்",
+    "category": "Oils",
+    "price": 175.0,
+    "unit": "litre",
+    "stock": 22,
+    "image": "/static/images/nilachiru_oil.jfif"
+  }
+]

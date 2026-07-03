@@ -1,0 +1,53 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Courier New', monospace; background: #f5f5f5; }
+
+.receipt {
+  width: 310px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px 18px;
+  border: 1px solid #ddd;
+}
+
+.receipt-header { text-align: center; margin-bottom: 12px; }
+.receipt-logo { font-size: 32px; margin-bottom: 4px; }
+.receipt-header h1 { font-size: 18px; font-weight: 700; letter-spacing: 1px; }
+.receipt-header .tamil { font-family: 'Noto Sans Tamil', serif; font-size: 12px; color: #555; margin: 2px 0; }
+.receipt-header .address { font-size: 10px; color: #666; margin: 2px 0; }
+
+.divider { border: none; border-top: 1px solid #ccc; margin: 10px 0; }
+.divider.dashed { border-top-style: dashed; }
+
+.receipt-meta { margin-bottom: 4px; }
+.meta-row { display: flex; justify-content: space-between; font-size: 11px; padding: 2px 0; }
+
+.receipt-table { width: 100%; border-collapse: collapse; margin-bottom: 4px; }
+.receipt-table th {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  padding: 5px 3px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+.receipt-table th:last-child, .receipt-table td:last-child { text-align: right; }
+.receipt-table td { font-size: 11px; padding: 4px 3px; }
+.receipt-table tbody tr { border-bottom: 1px dotted #eee; }
+
+.receipt-totals { margin-top: 4px; }
+.total-row { display: flex; justify-content: space-between; font-size: 11px; padding: 3px 0; }
+.total-row.grand { font-size: 14px; font-weight: 800; border-top: 1.5px solid #333; padding-top: 6px; margin-top: 3px; }
+
+.receipt-footer { text-align: center; margin-top: 12px; font-size: 11px; color: #555; }
+.receipt-footer .tamil { font-family: 'Noto Sans Tamil', serif; font-size: 12px; font-weight: 700; color: #333; margin: 4px 0; }
+.receipt-footer .small { font-size: 9px; color: #999; margin-top: 3px; }
+.barcode { font-size: 16px; letter-spacing: 3px; margin: 8px 0 2px; color: #333; }
+
+.no-print { margin: 20px auto; width: 310px; }
+
+@media print {
+  body { background: #fff; }
+  .no-print { display: none !important; }
+  .receipt { border: none; margin: 0; padding: 8px; width: 100%; }
+  @page { margin: 0; size: 80mm auto; }
+}

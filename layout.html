@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{% block title %}AroghiyaUllagam{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+  {% block extra_css %}{% endblock %}
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Tamil:wght@400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  {% if session.user %}
+  <nav class="navbar">
+    <div class="nav-brand">
+      <span class="brand-icon">🌿</span>
+      <div>
+        <span class="brand-name">AroghiyaUllagam</span>
+        <span class="brand-tamil">ஆரோக்கிய உலகம்</span>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="{{ url_for('billing') }}" class="nav-link {% if request.endpoint=='billing' %}active{% endif %}">
+        <span>🧾</span> Billing
+      </a>
+      <a href="{{ url_for('add_product') }}" class="nav-link {% if request.endpoint=='add_product' %}active{% endif %}">
+        <span>📦</span> Products
+      </a>
+      <a href="{{ url_for('bill_history') }}" class="nav-link {% if request.endpoint=='bill_history' %}active{% endif %}">
+        <span>📋</span> History
+      </a>
+      <a href="{{ url_for('logout') }}" class="nav-link logout">
+        <span>🚪</span> Logout
+      </a>
+    </div>
+  </nav>
+  {% endif %}
+  <main class="main-content">
+    {% block content %}{% endblock %}
+  </main>
+  {% block extra_js %}{% endblock %}
+</body>
+</html>

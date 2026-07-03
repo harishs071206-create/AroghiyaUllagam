@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+{% block title %}Billing — AroghiyaUllagam{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/billing.css') }}"/>
+{% endblock %}
+
+{% block content %}
+<div class="billing-container">
+  <!-- Left: Product Panel -->
+  <div class="product-panel">
+    <div class="panel-header">
+      <h2>Products</h2>
+      <input type="text" id="searchInput" placeholder="Search products…" class="search-bar"/>
+    </div>
+    <div class="category-tabs" id="categoryTabs">
+      <button class="cat-tab active" data-cat="All">All</button>
+    </div>
+    <div class="product-grid" id="productGrid">
+      <!-- Filled by JS -->
+    </div>
+  </div>
+
+  <!-- Right: Bill Panel -->
+  <div class="bill-panel">
+    <div class="bill-header">
+      <h2>Current Bill</h2>
+      <div class="bill-meta">
+        <input type="text" id="customerName" placeholder="Customer name (optional)" class="customer-input"/>
+        <select id="paymentMode" class="payment-select">
+          <option>Cash</option>
+          <option>UPI</option>
+          <option>Card</option>
+          <option>Credit</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="bill-items" id="billItems">
+      <div class="empty-bill">
+        <span>🛒</span>
+        <p>Add products to start billing</p>
+      </div>
+    </div>
+
+    <div class="bill-summary">
+      <div class="summary-row">
+        <span>Subtotal</span>
+        <span id="subtotal">₹0.00</span>
+      </div>
+      <div class="summary-row">
+        <span>Discount (%)</span>
+        <input type="number" id="discountInput" value="0" min="0" max="100" class="discount-input"/>
+      </div>
+      <div class="summary-row">
+        <span>Tax (5%)</span>
+        <span id="taxAmt">₹0.00</span>
+      </div>
+      <div class="summary-row total-row">
+        <span>Total</span>
+        <span id="totalAmt">₹0.00</span>
+      </div>
+    </div>
+
+    <div class="bill-actions">
+      <button class="btn-clear" onclick="clearBill()">🗑 Clear</button>
+      <button class="btn-save" onclick="saveBill()">💾 Save Bill</button>
+      <button class="btn-print" onclick="printBill()">🖨 Print</button>
+    </div>
+  </div>
+</div>
+
+<!-- Save success modal -->
+<div class="modal-overlay" id="successModal" style="display:none">
+  <div class="modal-box">
+    <div class="modal-icon">✅</div>
+    <h3>Bill Saved!</h3>
+    <p id="modalBillId"></p>
+    <div class="modal-actions">
+      <button onclick="closeModal()">Close</button>
+      <button class="btn-primary" onclick="printSaved()">Print Bill</button>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/billing.js') }}"></script>
+{% endblock %}

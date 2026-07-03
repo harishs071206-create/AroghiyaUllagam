@@ -1,0 +1,691 @@
+[
+  {
+    "id": "BILL0001",
+    "date": "2026-06-30 10:48:20",
+    "user": "Walk-in",
+    "customer": "Walk-in",
+    "items": [
+      {
+        "id": "P0001",
+        "name": "தேங்காய் எண்ணெய்",
+        "price": 185,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0002",
+        "name": "எள்ளு எண்ணெய்",
+        "price": 220,
+        "unit": "litre",
+        "qty": 2
+      },
+      {
+        "id": "P0003",
+        "name": "கடலை எண்ணெய்",
+        "price": 210,
+        "unit": "litre",
+        "qty": 2
+      },
+      {
+        "id": "P0004",
+        "name": "சூரியகாந்தி எண்ணெய்",
+        "price": 190,
+        "unit": "litre",
+        "qty": 2
+      },
+      {
+        "id": "P0005",
+        "name": "கடுகு எண்ணெய்",
+        "price": 200,
+        "unit": "litre",
+        "qty": 2
+      },
+      {
+        "id": "P0006",
+        "name": "நிலச்சீறு எண்ணெய்",
+        "price": 175,
+        "unit": "litre",
+        "qty": 1
+      }
+    ],
+    "subtotal": 2000,
+    "discount": 0,
+    "tax": 100,
+    "total": 2100,
+    "payment_mode": "Cash"
+  },
+  {
+    "id": "BILL0002",
+    "date": "2026-06-30 10:49:08",
+    "user": "Walk-in",
+    "customer": "Walk-in",
+    "items": [
+      {
+        "id": "P0006",
+        "name": "நிலச்சீறு எண்ணெய்",
+        "price": 175,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0003",
+        "name": "கடலை எண்ணெய்",
+        "price": 210,
+        "unit": "litre",
+        "qty": 1
+      }
+    ],
+    "subtotal": 385,
+    "discount": 0,
+    "tax": 19.25,
+    "total": 404.25,
+    "payment_mode": "Cash"
+  },
+  {
+    "id": "BILL0003",
+    "date": "2026-06-30 10:50:22",
+    "user": "Walk-in",
+    "customer": "Walk-in",
+    "items": [
+      {
+        "id": "P0003",
+        "name": "கடலை எண்ணெய்",
+        "price": 210,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0002",
+        "name": "எள்ளு எண்ணெய்",
+        "price": 220,
+        "unit": "litre",
+        "qty": 1
+      }
+    ],
+    "subtotal": 430,
+    "discount": 0,
+    "tax": 21.5,
+    "total": 451.5,
+    "payment_mode": "Cash"
+  },
+  {
+    "id": "BILL0004",
+    "date": "2026-06-30 10:51:12",
+    "user": "Walk-in",
+    "customer": "Walk-in",
+    "items": [
+      {
+        "id": "P0003",
+        "name": "கடலை எண்ணெய்",
+        "price": 210,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0002",
+        "name": "எள்ளு எண்ணெய்",
+        "price": 220,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0001",
+        "name": "தேங்காய் எண்ணெய்",
+        "price": 185,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0004",
+        "name": "சூரியகாந்தி எண்ணெய்",
+        "price": 190,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0005",
+        "name": "கடுகு எண்ணெய்",
+        "price": 200,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0006",
+        "name": "நிலச்சீறு எண்ணெய்",
+        "price": 175,
+        "unit": "litre",
+        "qty": 1
+      }
+    ],
+    "subtotal": 1180,
+    "discount": 0,
+    "tax": 59,
+    "total": 1239,
+    "payment_mode": "Cash"
+  },
+  {
+    "id": "BILL0005",
+    "date": "2026-06-30 10:53:19",
+    "user": "harish",
+    "customer": "harish",
+    "items": [
+      {
+        "id": "P0002",
+        "name": "எள்ளு எண்ணெய்",
+        "price": 220,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0003",
+        "name": "கடலை எண்ணெய்",
+        "price": 210,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0001",
+        "name": "தேங்காய் எண்ணெய்",
+        "price": 185,
+        "unit": "litre",
+        "qty": 1
+      }
+    ],
+    "subtotal": 615,
+    "discount": 0,
+    "tax": 30.75,
+    "total": 645.75,
+    "payment_mode": "Card"
+  },
+  {
+    "id": "BILL0006",
+    "date": "2026-06-30 10:57:46",
+    "user": "Walk-in",
+    "customer": "Walk-in",
+    "items": [
+      {
+        "id": "P0001",
+        "name": "தேங்காய் எண்ணெய்",
+        "price": 185,
+        "unit": "litre",
+        "qty": 1
+      }
+    ],
+    "subtotal": 185,
+    "discount": 0,
+    "tax": 9.25,
+    "total": 194.25,
+    "payment_mode": "Cash"
+  },
+  {
+    "id": "BILL0007",
+    "date": "2026-06-30 11:04:21",
+    "user": "Walk-in",
+    "customer": "Walk-in",
+    "items": [
+      {
+        "id": "P0001",
+        "name": "தேங்காய் எண்ணெய்",
+        "price": 185,
+        "unit": "litre",
+        "qty": 4
+      },
+      {
+        "id": "P0002",
+        "name": "எள்ளு எண்ணெய்",
+        "price": 220,
+        "unit": "litre",
+        "qty": 4
+      },
+      {
+        "id": "P0005",
+        "name": "கடுகு எண்ணெய்",
+        "price": 200,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0006",
+        "name": "நிலச்சீறு எண்ணெய்",
+        "price": 175,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0003",
+        "name": "கடலை எண்ணெய்",
+        "price": 210,
+        "unit": "litre",
+        "qty": 1
+      }
+    ],
+    "subtotal": 2205,
+    "discount": 0,
+    "tax": 110.25,
+    "total": 2315.25,
+    "payment_mode": "Cash"
+  },
+  {
+    "id": "BILL0008",
+    "date": "2026-06-30 11:04:47",
+    "user": "Walk-in",
+    "customer": "Walk-in",
+    "items": [
+      {
+        "id": "P0001",
+        "name": "தேங்காய் எண்ணெய்",
+        "price": 185,
+        "unit": "litre",
+        "qty": 2
+      },
+      {
+        "id": "P0002",
+        "name": "எள்ளு எண்ணெய்",
+        "price": 220,
+        "unit": "litre",
+        "qty": 2
+      },
+      {
+        "id": "P0003",
+        "name": "கடலை எண்ணெய்",
+        "price": 210,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0004",
+        "name": "சூரியகாந்தி எண்ணெய்",
+        "price": 190,
+        "unit": "litre",
+        "qty": 1
+      }
+    ],
+    "subtotal": 1210,
+    "discount": 0,
+    "tax": 60.5,
+    "total": 1270.5,
+    "payment_mode": "Cash"
+  },
+  {
+    "id": "BILL0009",
+    "date": "2026-06-30 11:07:44",
+    "user": "Walk-in",
+    "customer": "Walk-in",
+    "items": [
+      {
+        "id": "P0001",
+        "name": "தேங்காய் எண்ணெய்",
+        "price": 185,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0002",
+        "name": "எள்ளு எண்ணெய்",
+        "price": 220,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0003",
+        "name": "கடலை எண்ணெய்",
+        "price": 210,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0006",
+        "name": "நிலச்சீறு எண்ணெய்",
+        "price": 175,
+        "unit": "litre",
+        "qty": 1
+      }
+    ],
+    "subtotal": 790,
+    "discount": 0,
+    "tax": 39.5,
+    "total": 829.5,
+    "payment_mode": "Cash"
+  },
+  {
+    "id": "BILL0010",
+    "date": "2026-06-30 11:08:03",
+    "user": "sachin",
+    "customer": "sachin",
+    "items": [
+      {
+        "id": "P0001",
+        "name": "தேங்காய் எண்ணெய்",
+        "price": 185,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0005",
+        "name": "கடுகு எண்ணெய்",
+        "price": 200,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0003",
+        "name": "கடலை எண்ணெய்",
+        "price": 210,
+        "unit": "litre",
+        "qty": 2
+      },
+      {
+        "id": "P0002",
+        "name": "எள்ளு எண்ணெய்",
+        "price": 220,
+        "unit": "litre",
+        "qty": 2
+      }
+    ],
+    "subtotal": 1245,
+    "discount": 0,
+    "tax": 62.25,
+    "total": 1307.25,
+    "payment_mode": "Cash"
+  },
+  {
+    "id": "BILL0011",
+    "date": "2026-06-30 12:02:18",
+    "user": "sachin",
+    "customer": "sachin",
+    "items": [
+      {
+        "id": "P0001",
+        "name": "தேங்காய் எண்ணெய்",
+        "price": 185,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0002",
+        "name": "எள்ளு எண்ணெய்",
+        "price": 220,
+        "unit": "litre",
+        "qty": 2
+      }
+    ],
+    "subtotal": 625,
+    "discount": 0,
+    "tax": 31.25,
+    "total": 656.25,
+    "payment_mode": "Cash"
+  },
+  {
+    "id": "BILL0012",
+    "date": "2026-06-30 12:30:23",
+    "user": "sachin",
+    "customer": "sachin",
+    "items": [
+      {
+        "id": "P0001",
+        "name": "தேங்காய் எண்ணெய்",
+        "price": 185,
+        "unit": "litre",
+        "qty": 2
+      },
+      {
+        "id": "P0002",
+        "name": "எள்ளு எண்ணெய்",
+        "price": 220,
+        "unit": "litre",
+        "qty": 2
+      }
+    ],
+    "subtotal": 810,
+    "discount": 0,
+    "tax": 40.5,
+    "total": 850.5,
+    "payment_mode": "Cash"
+  },
+  {
+    "id": "BILL0013",
+    "date": "2026-06-30 12:31:20",
+    "user": "Walk-in",
+    "customer": "Walk-in",
+    "items": [
+      {
+        "id": "P0001",
+        "name": "தேங்காய் எண்ணெய்",
+        "price": 185,
+        "unit": "litre",
+        "qty": 2
+      },
+      {
+        "id": "P0002",
+        "name": "எள்ளு எண்ணெய்",
+        "price": 220,
+        "unit": "litre",
+        "qty": 1
+      }
+    ],
+    "subtotal": 590,
+    "discount": 59,
+    "tax": 26.55,
+    "total": 557.55,
+    "payment_mode": "Cash"
+  },
+  {
+    "id": "BILL0014",
+    "date": "2026-06-30 12:38:31",
+    "user": "sachin",
+    "customer": "sachin",
+    "items": [
+      {
+        "id": "P0001",
+        "name": "தேங்காய் எண்ணெய்",
+        "price": 185,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0002",
+        "name": "எள்ளு எண்ணெய்",
+        "price": 220,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0003",
+        "name": "கடலை எண்ணெய்",
+        "price": 210,
+        "unit": "litre",
+        "qty": 2
+      }
+    ],
+    "subtotal": 825,
+    "discount": 0,
+    "tax": 41.25,
+    "total": 866.25,
+    "payment_mode": "Cash"
+  },
+  {
+    "id": "BILL0015",
+    "date": "2026-06-30 12:39:36",
+    "user": "Walk-in",
+    "customer": "Walk-in",
+    "items": [
+      {
+        "id": "P0001",
+        "name": "தேங்காய் எண்ணெய்",
+        "price": 185,
+        "unit": "litre",
+        "qty": 2
+      },
+      {
+        "id": "P0002",
+        "name": "எள்ளு எண்ணெய்",
+        "price": 220,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0003",
+        "name": "கடலை எண்ணெய்",
+        "price": 210,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0005",
+        "name": "கடுகு எண்ணெய்",
+        "price": 200,
+        "unit": "litre",
+        "qty": 1
+      }
+    ],
+    "subtotal": 1000,
+    "discount": 0,
+    "tax": 50,
+    "total": 1050,
+    "payment_mode": "Cash"
+  },
+  {
+    "id": "BILL0016",
+    "date": "2026-06-30 12:42:39",
+    "user": "Walk-in",
+    "customer": "Walk-in",
+    "items": [
+      {
+        "id": "P0001",
+        "name": "தேங்காய் எண்ணெய்",
+        "price": 185,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0002",
+        "name": "எள்ளு எண்ணெய்",
+        "price": 220,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0006",
+        "name": "நிலச்சீறு எண்ணெய்",
+        "price": 175,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0005",
+        "name": "கடுகு எண்ணெய்",
+        "price": 200,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0004",
+        "name": "சூரியகாந்தி எண்ணெய்",
+        "price": 190,
+        "unit": "litre",
+        "qty": 1
+      }
+    ],
+    "subtotal": 970,
+    "discount": 0,
+    "tax": 48.5,
+    "total": 1018.5,
+    "payment_mode": "Cash"
+  },
+  {
+    "id": "BILL0017",
+    "date": "2026-06-30 12:43:58",
+    "user": "Walk-in",
+    "customer": "Walk-in",
+    "items": [
+      {
+        "id": "P0003",
+        "name": "கடலை எண்ணெய்",
+        "price": 210,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0002",
+        "name": "எள்ளு எண்ணெய்",
+        "price": 220,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0001",
+        "name": "தேங்காய் எண்ணெய்",
+        "price": 185,
+        "unit": "litre",
+        "qty": 3
+      },
+      {
+        "id": "P0004",
+        "name": "சூரியகாந்தி எண்ணெய்",
+        "price": 190,
+        "unit": "litre",
+        "qty": 1
+      }
+    ],
+    "subtotal": 1175,
+    "discount": 0,
+    "tax": 58.75,
+    "total": 1233.75,
+    "payment_mode": "Cash"
+  },
+  {
+    "id": "BILL0018",
+    "date": "2026-06-30 12:48:36",
+    "user": "Walk-in",
+    "customer": "Walk-in",
+    "items": [
+      {
+        "id": "P0003",
+        "name": "கடலை எண்ணெய்",
+        "price": 210,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0002",
+        "name": "எள்ளு எண்ணெய்",
+        "price": 220,
+        "unit": "litre",
+        "qty": 2
+      },
+      {
+        "id": "P0001",
+        "name": "தேங்காய் எண்ணெய்",
+        "price": 185,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0004",
+        "name": "சூரியகாந்தி எண்ணெய்",
+        "price": 190,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0005",
+        "name": "கடுகு எண்ணெய்",
+        "price": 200,
+        "unit": "litre",
+        "qty": 1
+      },
+      {
+        "id": "P0006",
+        "name": "நிலச்சீறு எண்ணெய்",
+        "price": 175,
+        "unit": "litre",
+        "qty": 1
+      }
+    ],
+    "subtotal": 1400,
+    "discount": 0,
+    "tax": 70,
+    "total": 1470,
+    "payment_mode": "Cash"
+  }
+]

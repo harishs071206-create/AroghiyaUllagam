@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+{% block title %}Bill History — AroghiyaUllagam{% endblock %}
+
+{% block content %}
+<div class="page-container">
+  <div class="page-header">
+    <h1>Bill History</h1>
+    <p>{{ bills|length }} bills recorded</p>
+  </div>
+
+  <!-- Summary Cards -->
+  <div class="stats-row">
+    <div class="stat-card">
+      <span class="stat-icon">🧾</span>
+      <div>
+        <p class="stat-label">Total Bills</p>
+        <p class="stat-value">{{ bills|length }}</p>
+      </div>
+    </div>
+    <div class="stat-card">
+      <span class="stat-icon">💰</span>
+      <div>
+        <p class="stat-label">Total Revenue</p>
+        <p class="stat-value">₹{{ "%.2f"|format(bills|sum(attribute='total')) }}</p>
+      </div>
+    </div>
+    <div class="stat-card">
+      <span class="stat-icon">📦</span>
+      <div>
+        <p class="stat-label">Avg Bill Value</p>
+        <p class="stat-value">₹{{ "%.2f"|format((bills|sum(attribute='total') / bills|length) if bills else 0) }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header-row">
+      <h2 class="card-title">All Bills</h2>
+      <input type="text" id="filterInput" placeholder="Search by bill ID or customer…" class="filter-input" oninput="filterTable()"/>
+    </div>
+    <div class="table-wrap">
+      <table class="data-table" id="billTable">
+        <thead>
+          <tr>
+            <th>Bill ID</th>
+            <th>Date & Time</th>
+            <th>Customer</th>
+            <th>Items</th>
+            <th>Total</th>
+            <th>Payment</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for b in bills %}
+          <tr>
+            <td><span class="badge">{{ b.id }}</span></td>
+            <td class="date-cell">{{ b.date }}</td>
+            <td>{{ b.customer }}</td>
+            <td>{{ b.items|length }} items</td>
+            <td class="price-cell">₹{{ "%.2f"|format(b.total) }}</td>
+            <td><span class="pay-badge {{ b.payment_mode|lower }}">{{ b.payment_mode }}</span></td>
+            <td class="action-cell">
+              <a href="{{ url_for('bill_print', bill_id=b.id) }}" class="btn-edit" target="_blank">🖨 Print</a>
+              <form method="POST" action="{{ url_for('delete_bill', bill_id=b.id) }}" style="display:inline"
+                    onsubmit="return confirm('Delete bill {{ b.id }}?')">
+                <button type="submit" class="btn-delete">🗑</button>
+              </form>
+            </td>
+          </tr>
+          {% else %}
+          <tr><td colspan="7" class="empty-row">No bills yet. Go to Billing to create one.</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<script>
+function filterTable(){
+  const q=document.getElementById('filterInput').value.toLowerCase();
+  document.querySelectorAll('#billTable tbody tr').forEach(r=>{
+    r.style.display=r.textContent.toLowerCase().includes(q)?'':'none';
+  });
+}
+</script>
+{% endblock %}
